@@ -1,0 +1,72 @@
+h1.ui-title {
+  font-size: 25px !important;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+figure {
+  text-align: center;
+}
+
+p.blog {
+  padding: 20px;
+  font-size: 20px;
+  margin: 0;
+  text-align: justify;
+}
+
+ol {
+  padding: 20px 60px;
+  font-size: 20px;
+  margin: 0;
+  text-align: justify;
+}
+
+h4 {
+  text-align: center;
+  font-size: 25px;
+}
+
+p.contact {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-size: 20px;
+}
+
+#back {
+  margin: 20px;
+}
+
+.ui-footer {
+  padding: 20px;
+}
+
+.ui-footer .ui-title {
+  padding: 0;
+}
+
+@media (max-width: 750px) {
+  figure {
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  ol {
+    padding: 20px 40px;
+  }
+  h4 {
+    font-size: 25px;
+  }
+  p.contact {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,170 @@
+<!-- Assignment 3: -->
+<!-- Question 2: -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <title>Pawesome</title>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css">
+    
+    <link rel="stylesheet" href="ThemeRoller.css">
+    <link rel="stylesheet" href="Assignment3Q2.css">
+  </head>
+
+  <body>
+    <div class="parent">
+      <!-- Blog page -->
+      <div class="pg" data-role="page" id="blog">
+        <header data-role="header">
+          <h1>Pawesome</h1>
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#blog" data-icon="grid" class="ui-btn-active ui-state-persist">Blog</a></li>
+              <li><a href="#contactUs" data-icon="info">Contact Us</a></li>
+            </ul>
+          </div>
+        </header>
+
+        <section class="ui-content" role="main">
+          <div>
+            <h2>Do cats/dogs know their name?</h2>
+            <p class="blog">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim nunc leo. Mauris rhoncus molestie metus, vel eleifend eros condimentum nec. Fusce in lectus 
+              euismod, rutrum elit ac, imperdiet urna. Quisque non condimentum dolor. Donec feugiat vitae urna vitae viverra. Duis placerat magna a pharetra faucibus. Etiam aliquam, 
+              purus ac scelerisque fringilla, magna augue sagittis ipsum, pulvinar congue neque metus non mauris. Duis sed felis luctus, placerat leo id, cursus odio. Nulla sed 
+              efficitur risus, quis bibendum lectus. Cras congue tincidunt lectus sed laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis 
+              egestas.
+            </p>
+            <figure>
+              <picture>
+                <source media="(max-width: 749px)" srcset="catdog_50.jpg">
+                <source media="(min-width: 750px)" srcset="catdog.jpg">
+                <img src="catdog.jpg" alt="A dog and a cat laying on the grass">
+              </picture>
+              <figcaption>Photo by <a href="https://unsplash.com/@sita2?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andrew S</a> 
+                on <a href="https://unsplash.com/photos/a-dog-and-a-cat-laying-in-the-grass-ouo1hbizWwo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <h2>Essential tips to raise healthy pets</h2>
+            <p class="blog">
+              Proin consectetur odio sapien. Duis quis ex vel elit dictum posuere sit amet ac lacus. Vestibulum eu luctus turpis. Proin eget tellus in enim varius ullamcorper. Ut leo mi, 
+              egestas at pulvinar vitae, scelerisque rutrum magna. Sed in facilisis justo, quis dapibus sapien. Aliquam maximus luctus augue vitae vulputate. Fusce ornare augue 
+              interdum, gravida lacus nec, egestas purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </p>
+            <ol id="tips"></ol>
+            <figure>
+              <picture>
+                <source media="(max-width: 749px)" srcset="healthydog_50.jpg">
+                <source media="(min-width: 750px)" srcset="healthydog.jpg">
+                <img src="healthydog.jpg" alt="A dog running on the grass under the sun">
+              </picture>
+              <figcaption>Photo by <a href="https://unsplash.com/@jesperados?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jesper Brouwers</a> 
+                on <a href="https://unsplash.com/photos/a-dog-jumping-in-the-air-G-vAvat-Cgs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <h2>Why does my cat/dog attack me?</h2>
+            <p class="blog">
+              Aliquam sapien nisl, pretium a vulputate quis, sollicitudin in risus. Quisque lobortis, enim vel accumsan rhoncus, dolor lacus faucibus tortor, sit amet ullamcorper 
+              justo nulla sed lacus. Integer interdum diam id orci vulputate imperdiet. Sed ac turpis vulputate nisl sollicitudin efficitur. Sed ut nisi ultricies turpis mattis dapibus 
+              vitae eu enim. Pellentesque in sollicitudin enim. Nulla facilisi. Suspendisse sodales convallis nulla ac pretium. In convallis porta erat, vitae varius augue auctor nec. 
+              Etiam bibendum tristique ex vel mollis. Suspendisse euismod malesuada augue, in finibus ante venenatis vel. Vestibulum ante ipsum primis in faucibus orci luctus et 
+              ultrices posuere cubilia curae; Curabitur in convallis velit, in volutpat odio. Duis cursus mauris sit amet bibendum suscipit. Mauris ante felis, ullamcorper quis 
+              velit quis, dictum placerat felis. Sed suscipit diam odio, et dignissim sem tristique fermentum.
+            </p>
+            <figure>
+              <picture>
+                <source media="(max-width: 749px)" srcset="dogplay_50.jpg">
+                <source media="(min-width: 750px)" srcset="dogplay.jpg">
+                <img src="dogplay.jpg" alt="Two dogs playing on the grass">
+              </picture>
+              <figcaption>Photo by <a href="https://unsplash.com/@invisibleman_photography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">David Taffet</a> 
+                on <a href="https://unsplash.com/photos/two-short-coated-brown-and-black-dogs-playing-5gXPapBz40c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <h2>How to throw a birthday party for your cat/dog</h2>
+            <p class="blog">
+              Proin consectetur odio sapien. Duis quis ex vel elit dictum posuere sit amet ac lacus. Vestibulum eu luctus turpis. Proin eget tellus in enim varius ullamcorper. Ut 
+              leo mi, egestas at pulvinar vitae, scelerisque rutrum magna. Sed in facilisis justo, quis dapibus sapien. Aliquam maximus luctus augue vitae vulputate. Fusce ornare 
+              augue interdum, gravida lacus nec, egestas purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </p>
+            <ol id="birthday"></ol>
+            <figure>
+              <picture>
+                <source media="(max-width: 749px)" srcset="catbirthday_50.jpg">
+                <source media="(min-width: 750px)" srcset="catbirthday.jpg">
+                <img src="catbirthday.jpg" alt="A cat sitting on the couch next to its birthday cake">
+              </picture>
+              <figcaption>Photo by <a href="https://unsplash.com/@asalmashkoori?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Asal Mshk</a> 
+                on <a href="https://unsplash.com/photos/a-cat-sitting-on-a-couch-next-to-a-cake-8tWsZHubj2c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <footer data-role="footer"><h4>Krisanne Apostol &copy; 2023</h4></footer>
+      </div>
+
+      <!-- Contact Us page -->
+      <div class="pg" data-role="page" id="contactUs">
+        <header data-role="header">
+          <h1>Pawesome</h1>
+          <div data-role="navbar" data-theme="a">
+            <ul>
+              <li><a href="#blog" data-icon="grid">Blog</a></li>
+              <li><a href="#contactUs" data-icon="info" class="ui-btn-active ui-state-persist">Contact Us</a></li>
+            </ul>
+          </div>
+        </header>
+
+        <section class="ui-content" role="main">
+          <h2>Contact Us</h2>
+
+          <h4>Email</h4>
+          <p class="contact"><a href="mailto:contactpawesome@gmail.com">contactpawesome@gmail.com</a></p>
+
+          <h4>Mailing Address</h4>
+          <p class="contact">Pawesome Corp.<br>444 Sample Dr.<br>Edmonton AB T6W 0B3</p>
+
+          <h4>Phone</h4>
+          <p class="contact"><a href="tel:444-444-4444" class="contactdetails">444-444-4444</a></p>
+
+          <a href="#" id="back" data-role="button" data-rel="back" data-icon="back">Back to Blog</a>
+        </section>
+
+        <footer data-role="footer"><h4>Krisanne Apostol &copy; 2023</h4></footer>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        $.get("tips.xml", function(data) {
+          $(data).find("tips").children().each(function() {
+            var tip = $(this).text();
+            $("#tips").append("<li>" + tip + "</li>");
+          });
+        });
+
+        $.getJSON("birthday.json", function(data) {
+          $.each(data, function(key, value) {
+              $("#birthday").append("<li>" + value + "</li>");
+          });
+        });
+      });
+    </script>
+    </script>
+  </body>
+</html>
